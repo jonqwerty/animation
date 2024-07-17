@@ -4,20 +4,29 @@ import {NavigationContainer} from '@react-navigation/native';
 
 import SegmentBtnScreen from '../screens/SegmentBtnScreen';
 import CustomTouchableScreen from '../screens/CustomTouchableScreen';
+import ListScreen from '../screens/ListScreen';
 
 const Stack = createNativeStackNavigator();
 
 const Routes = () => {
   return (
     <Stack.Navigator screenOptions={{headerShown: false}}>
-      {/* <Stack.Screen
+      <Stack.Screen
+        name="List"
+        component={ListScreen}
+        options={{
+          gestureEnabled: false,
+          animation: 'none',
+        }}
+      />
+      <Stack.Screen
         name="SegmentBtn"
         component={SegmentBtnScreen}
         options={{
           gestureEnabled: false,
           animation: 'none',
         }}
-      /> */}
+      />
       <Stack.Screen
         name="CustomTouchable"
         component={CustomTouchableScreen}
