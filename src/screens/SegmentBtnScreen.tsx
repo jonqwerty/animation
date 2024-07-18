@@ -9,28 +9,22 @@ const SegmentBtnScreen: FC = () => {
   const [selectedOption, setSelectedOption] = useState('Standart');
 
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-      }}>
-      <StatusBar
-        animated={true}
-        backgroundColor={'#56dfda'}
-        barStyle={'default'}
+    <View style={styles.container}>
+      <SegmentedControl
+        options={options}
+        selectedOption={selectedOption}
+        onOptionPress={setSelectedOption}
       />
-      <View>
-        <SegmentedControl
-          options={options}
-          selectedOption={selectedOption}
-          onOptionPress={setSelectedOption}
-        />
-      </View>
     </View>
   );
 };
 
 export default SegmentBtnScreen;
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+});

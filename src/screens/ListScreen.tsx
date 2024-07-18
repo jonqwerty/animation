@@ -5,17 +5,18 @@ import {useNavigation} from '@react-navigation/native';
 const ListScreen: FC = () => {
   const navigation = useNavigation<StackNavigationProp<RootStackParamList>>();
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-      }}>
+    <View style={styles.container}>
       <StatusBar
         animated={true}
         backgroundColor={'#56dfda'}
         barStyle={'default'}
       />
+      <Text
+        onPress={() => {
+          navigation.navigate('GestureBtn');
+        }}>
+        GestureBtn
+      </Text>
       <Text
         onPress={() => {
           navigation.navigate('SegmentBtn');
@@ -34,4 +35,10 @@ const ListScreen: FC = () => {
 
 export default ListScreen;
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+});

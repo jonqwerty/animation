@@ -1,20 +1,11 @@
-import { StatusBar, StyleSheet, Text, View } from 'react-native'
-import React from 'react'
-import { CustomTouchable } from '../components/CustomTouchable';
+import {StatusBar, StyleSheet, Text, View} from 'react-native';
+import React, {FC} from 'react';
 
-const CustomTouchableScreen = () => {
+import {CustomTouchable} from '../components/CustomTouchable';
+
+const CustomTouchableScreen: FC = () => {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-      }}>
-      <StatusBar
-        animated={true}
-        backgroundColor={'#56dfda'}
-        barStyle={'default'}
-      />
+    <View style={styles.container}>
       <CustomTouchable
         onPress={() => {
           console.log('pressed');
@@ -23,11 +14,16 @@ const CustomTouchableScreen = () => {
       </CustomTouchable>
     </View>
   );
-}
+};
 
-export default CustomTouchableScreen
+export default CustomTouchableScreen;
 
 const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
   squareButton: {
     height: 150,
     aspectRatio: 1, // width: 150,

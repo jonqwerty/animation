@@ -5,6 +5,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import SegmentBtnScreen from '../screens/SegmentBtnScreen';
 import CustomTouchableScreen from '../screens/CustomTouchableScreen';
 import ListScreen from '../screens/ListScreen';
+import GestureBtnScreen from '../screens/GestureBtnScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -14,6 +15,14 @@ const Routes = () => {
       <Stack.Screen
         name="List"
         component={ListScreen}
+        options={{
+          gestureEnabled: false,
+          animation: 'none',
+        }}
+      />
+      <Stack.Screen
+        name="GestureBtn"
+        component={GestureBtnScreen}
         options={{
           gestureEnabled: false,
           animation: 'none',
