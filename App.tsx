@@ -8,7 +8,8 @@ import AppNavigator from './src/navigation/AppNavigator';
 const App: FC = () => {
   return (
     <GestureHandlerRootView style={{flex: 1}}>
-      <SafeAreaProvider>
+      
+      <SafeAreaProvider >
         <SafeAreaView style={styles.container}>
           <AppNavigator />
         </SafeAreaView>

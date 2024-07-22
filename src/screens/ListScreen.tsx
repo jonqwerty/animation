@@ -1,6 +1,8 @@
 import {StatusBar, StyleSheet, Text, View} from 'react-native';
 import React, {FC} from 'react';
 import {useNavigation} from '@react-navigation/native';
+import {StackNavigationProp} from '@react-navigation/stack';
+import {RootStackParamList, Screen} from '../common/types';
 
 const ListScreen: FC = () => {
   const navigation = useNavigation<StackNavigationProp<RootStackParamList>>();
@@ -8,26 +10,34 @@ const ListScreen: FC = () => {
     <View style={styles.container}>
       <StatusBar
         animated={true}
-        backgroundColor={'#56dfda'}
-        barStyle={'default'}
+        backgroundColor={'black'}
+        barStyle={'light-content'}
       />
+      <Text style={{fontSize: 30, marginBottom: 10}}>Gestures</Text>
       <Text
         onPress={() => {
-          navigation.navigate('GestureBtn');
+          navigation.navigate(Screen.GestureBtn, {});
         }}>
         GestureBtn
       </Text>
       <Text
         onPress={() => {
-          navigation.navigate('SegmentBtn');
+          navigation.navigate(Screen.SegmentBtn, {});
         }}>
         SegmentedControl
       </Text>
       <Text
         onPress={() => {
-          navigation.navigate('CustomTouchable');
+          navigation.navigate(Screen.CustomTouchable, {});
         }}>
         CustomTouchable
+      </Text>
+      <Text style={{fontSize: 30, marginVertical: 10}}>Animations</Text>
+      <Text
+        onPress={() => {
+          navigation.navigate(Screen.StackedCards, {});
+        }}>
+        StackedCards
       </Text>
     </View>
   );
