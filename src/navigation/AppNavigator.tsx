@@ -7,6 +7,7 @@ import CustomTouchableScreen from '../screens/CustomTouchableScreen';
 import ListScreen from '../screens/ListScreen';
 import GestureBtnScreen from '../screens/GestureBtnScreen';
 import StackedCardsScreen from '../screens/StackedCardsScreen';
+import Animated3DCardScreen from '../screens/Animated3DCardScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -46,6 +47,16 @@ const Routes = () => {
       <Stack.Screen
         name="CustomTouchable"
         component={CustomTouchableScreen}
+        options={
+          {
+            // gestureEnabled: false,
+            // animation: 'none',
+          }
+        }
+      />
+      <Stack.Screen
+        name="Animated3DCard"
+        component={Animated3DCardScreen}
         options={
           {
             // gestureEnabled: false,

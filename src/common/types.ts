@@ -6,6 +6,7 @@ export enum Screen {
   SegmentBtn = 'SegmentBtn',
   CustomTouchable = 'CustomTouchable',
   StackedCards = 'StackedCards',
+  Animated3DCard = 'Animated3DCard',
 }
 
 export type RootStackParamList = {
@@ -14,6 +15,7 @@ export type RootStackParamList = {
   SegmentBtn: {};
   CustomTouchable: {};
   StackedCards: {};
+  Animated3DCard: {};
 };
 
 export type RootRouteProps<RouteName extends keyof RootStackParamList> =

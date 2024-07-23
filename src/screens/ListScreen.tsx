@@ -32,6 +32,12 @@ const ListScreen: FC = () => {
         }}>
         CustomTouchable
       </Text>
+      <Text
+        onPress={() => {
+          navigation.navigate(Screen.Animated3DCard, {});
+        }}>
+        Animated3DCard
+      </Text>
       <Text style={{fontSize: 30, marginVertical: 10}}>Animations</Text>
       <Text
         onPress={() => {
