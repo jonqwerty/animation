@@ -38,12 +38,21 @@ const ListScreen: FC = () => {
         }}>
         Animated3DCard
       </Text>
+
       <Text style={{fontSize: 30, marginVertical: 10}}>Animations</Text>
+
       <Text
         onPress={() => {
           navigation.navigate(Screen.StackedCards, {});
         }}>
         StackedCards
+      </Text>
+
+      <Text
+        onPress={() => {
+          navigation.navigate(Screen.DonutChart, {});
+        }}>
+        DonutChart
       </Text>
     </View>
   );
