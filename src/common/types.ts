@@ -11,6 +11,7 @@ export enum Screen {
   GestyreBasics = 'GestyreBasics',
   InterpolateWithScroll = 'InterpolateWithScroll',
   InterpolateColours = 'InterpolateColours',
+  PinchBasics = 'PinchBasics',
 }
 
 export type RootStackParamList = {
@@ -24,6 +25,7 @@ export type RootStackParamList = {
   GestyreBasics: {};
   InterpolateWithScroll: {};
   InterpolateColours: {};
+  PinchBasics: {};
 };
 
 export type RootRouteProps<RouteName extends keyof RootStackParamList> =

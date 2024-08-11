@@ -56,6 +56,12 @@ const ListScreen: FC = () => {
         }}>
         InterpolateColours
       </Text>
+      <Text
+        onPress={() => {
+          navigation.navigate(Screen.PinchBasics, {});
+        }}>
+        PinchBasics
+      </Text>
 
       <Text style={{fontSize: 30, marginVertical: 10}}>Animations</Text>
 

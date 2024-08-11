@@ -12,6 +12,7 @@ import DonutChartScreen from '../screens/DonutChartScreen';
 import GestyreBasicsScreen from '../screens/GestyreBasicsScreen';
 import InterpolateWithScrollScreen from '../screens/InterpolateWithScrollScreen';
 import InterpolateColoursScreen from '../screens/InterpolateColoursScreen';
+import PinchBasicsScreen from '../screens/PinchBasicsScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -111,6 +112,16 @@ const Routes = () => {
       <Stack.Screen
         name="InterpolateColours"
         component={InterpolateColoursScreen}
+        options={
+          {
+            // gestureEnabled: false,
+            // animation: 'none',
+          }
+        }
+      />
+      <Stack.Screen
+        name="PinchBasics"
+        component={PinchBasicsScreen}
         options={
           {
             // gestureEnabled: false,
