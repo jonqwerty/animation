@@ -16,6 +16,12 @@ const ListScreen: FC = () => {
       <Text style={{fontSize: 30, marginBottom: 10}}>Gestures</Text>
       <Text
         onPress={() => {
+          navigation.navigate(Screen.GestyreBasics, {});
+        }}>
+        GestureBasics
+      </Text>
+      <Text
+        onPress={() => {
           navigation.navigate(Screen.GestureBtn, {});
         }}>
         GestureBtn

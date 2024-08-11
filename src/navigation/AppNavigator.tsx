@@ -9,6 +9,7 @@ import GestureBtnScreen from '../screens/GestureBtnScreen';
 import StackedCardsScreen from '../screens/StackedCardsScreen';
 import Animated3DCardScreen from '../screens/Animated3DCardScreen';
 import DonutChartScreen from '../screens/DonutChartScreen';
+import GestyreBasicsScreen from '../screens/GestyreBasicsScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -78,6 +79,16 @@ const Routes = () => {
       <Stack.Screen
         name="DonutChart"
         component={DonutChartScreen}
+        options={
+          {
+            // gestureEnabled: false,
+            // animation: 'none',
+          }
+        }
+      />
+      <Stack.Screen
+        name="GestyreBasics"
+        component={GestyreBasicsScreen}
         options={
           {
             // gestureEnabled: false,
