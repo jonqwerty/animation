@@ -10,6 +10,7 @@ export enum Screen {
   DonutChart = 'DonutChart',
   GestyreBasics = 'GestyreBasics',
   InterpolateWithScroll = 'InterpolateWithScroll',
+  InterpolateColours = 'InterpolateColours',
 }
 
 export type RootStackParamList = {
@@ -22,6 +23,7 @@ export type RootStackParamList = {
   DonutChart: {};
   GestyreBasics: {};
   InterpolateWithScroll: {};
+  InterpolateColours: {};
 };
 
 export type RootRouteProps<RouteName extends keyof RootStackParamList> =

@@ -50,6 +50,12 @@ const ListScreen: FC = () => {
         }}>
         InterpolateWithScroll
       </Text>
+      <Text
+        onPress={() => {
+          navigation.navigate(Screen.InterpolateColours, {});
+        }}>
+        InterpolateColours
+      </Text>
 
       <Text style={{fontSize: 30, marginVertical: 10}}>Animations</Text>
 
