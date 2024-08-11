@@ -9,6 +9,7 @@ export enum Screen {
   Animated3DCard = 'Animated3DCard',
   DonutChart = 'DonutChart',
   GestyreBasics = 'GestyreBasics',
+  InterpolateWithScroll = 'InterpolateWithScroll',
 }
 
 export type RootStackParamList = {
@@ -20,6 +21,7 @@ export type RootStackParamList = {
   Animated3DCard: {};
   DonutChart: {};
   GestyreBasics: {};
+  InterpolateWithScroll: {};
 };
 
 export type RootRouteProps<RouteName extends keyof RootStackParamList> =

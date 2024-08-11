@@ -44,6 +44,12 @@ const ListScreen: FC = () => {
         }}>
         Animated3DCard
       </Text>
+      <Text
+        onPress={() => {
+          navigation.navigate(Screen.InterpolateWithScroll, {});
+        }}>
+        InterpolateWithScroll
+      </Text>
 
       <Text style={{fontSize: 30, marginVertical: 10}}>Animations</Text>
 
