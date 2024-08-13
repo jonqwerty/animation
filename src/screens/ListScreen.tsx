@@ -62,6 +62,12 @@ const ListScreen: FC = () => {
         }}>
         PinchBasics
       </Text>
+      <Text
+        onPress={() => {
+          navigation.navigate(Screen.AnimateOnDoubleTap, {});
+        }}>
+        AnimateOnDoubleTap
+      </Text>
 
       <Text style={{fontSize: 30, marginVertical: 10}}>Animations</Text>
 

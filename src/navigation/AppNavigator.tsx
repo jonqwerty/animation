@@ -13,6 +13,7 @@ import GestyreBasicsScreen from '../screens/GestyreBasicsScreen';
 import InterpolateWithScrollScreen from '../screens/InterpolateWithScrollScreen';
 import InterpolateColoursScreen from '../screens/InterpolateColoursScreen';
 import PinchBasicsScreen from '../screens/PinchBasicsScreen';
+import AnimateOnDoubleTapScreen from '../screens/AnimateOnDoubleTapScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -122,6 +123,16 @@ const Routes = () => {
       <Stack.Screen
         name="PinchBasics"
         component={PinchBasicsScreen}
+        options={
+          {
+            // gestureEnabled: false,
+            // animation: 'none',
+          }
+        }
+      />
+      <Stack.Screen
+        name="AnimateOnDoubleTap"
+        component={AnimateOnDoubleTapScreen}
         options={
           {
             // gestureEnabled: false,
