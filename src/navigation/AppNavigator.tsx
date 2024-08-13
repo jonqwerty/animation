@@ -14,6 +14,7 @@ import InterpolateWithScrollScreen from '../screens/InterpolateWithScrollScreen'
 import InterpolateColoursScreen from '../screens/InterpolateColoursScreen';
 import PinchBasicsScreen from '../screens/PinchBasicsScreen';
 import AnimateOnDoubleTapScreen from '../screens/AnimateOnDoubleTapScreen';
+import ScrollWithPanGestureScreen from '../screens/ScrollWithPanGestureScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -133,6 +134,16 @@ const Routes = () => {
       <Stack.Screen
         name="AnimateOnDoubleTap"
         component={AnimateOnDoubleTapScreen}
+        options={
+          {
+            // gestureEnabled: false,
+            // animation: 'none',
+          }
+        }
+      />
+      <Stack.Screen
+        name="ScrollWithPanGesture"
+        component={ScrollWithPanGestureScreen}
         options={
           {
             // gestureEnabled: false,

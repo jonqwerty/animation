@@ -13,6 +13,7 @@ export enum Screen {
   InterpolateColours = 'InterpolateColours',
   PinchBasics = 'PinchBasics',
   AnimateOnDoubleTap = 'AnimateOnDoubleTap',
+  ScrollWithPanGesture = 'ScrollWithPanGesture',
 }
 
 export type RootStackParamList = {
@@ -28,6 +29,7 @@ export type RootStackParamList = {
   InterpolateColours: {};
   PinchBasics: {};
   AnimateOnDoubleTap: {};
+  ScrollWithPanGesture: {};
 };
 
 export type RootRouteProps<RouteName extends keyof RootStackParamList> =

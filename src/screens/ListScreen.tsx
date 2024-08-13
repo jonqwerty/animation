@@ -68,6 +68,12 @@ const ListScreen: FC = () => {
         }}>
         AnimateOnDoubleTap
       </Text>
+      <Text
+        onPress={() => {
+          navigation.navigate(Screen.ScrollWithPanGesture, {});
+        }}>
+        ScrollWithPanGesture
+      </Text>
 
       <Text style={{fontSize: 30, marginVertical: 10}}>Animations</Text>
 
