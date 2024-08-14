@@ -77,6 +77,13 @@ const ListScreen: FC = () => {
         <Text
           style={styles.item}
           onPress={() => {
+            navigation.navigate(Screen.ColourPicker, {});
+          }}>
+          ColourPicker
+        </Text>
+        <Text
+          style={styles.item}
+          onPress={() => {
             navigation.navigate(Screen.GestureBtn, {});
           }}>
           GestureBtn
