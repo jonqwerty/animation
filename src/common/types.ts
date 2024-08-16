@@ -15,6 +15,7 @@ export enum Screen {
   AnimateOnDoubleTap = 'AnimateOnDoubleTap',
   ScrollWithPanGesture = 'ScrollWithPanGesture',
   ColourPicker = 'ColourPicker',
+  CircularProgressBar = 'CircularProgressBar',
 }
 
 export type RootStackParamList = {
@@ -32,6 +33,7 @@ export type RootStackParamList = {
   AnimateOnDoubleTap: {};
   ScrollWithPanGesture: {};
   ColourPicker: {};
+  CircularProgressBar: {};
 };
 
 export type RootRouteProps<RouteName extends keyof RootStackParamList> =
