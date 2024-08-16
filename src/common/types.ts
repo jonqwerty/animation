@@ -16,6 +16,7 @@ export enum Screen {
   ScrollWithPanGesture = 'ScrollWithPanGesture',
   ColourPicker = 'ColourPicker',
   CircularProgressBar = 'CircularProgressBar',
+  SwipeToDelete = 'SwipeToDelete',
 }
 
 export type RootStackParamList = {
@@ -34,6 +35,7 @@ export type RootStackParamList = {
   ScrollWithPanGesture: {};
   ColourPicker: {};
   CircularProgressBar: {};
+  SwipeToDelete: {};
 };
 
 export type RootRouteProps<RouteName extends keyof RootStackParamList> =

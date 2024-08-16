@@ -91,13 +91,21 @@ const ListScreen: FC = () => {
         <Text
           style={styles.item}
           onPress={() => {
-            navigation.navigate(Screen.GestureBtn, {});
+            navigation.navigate(Screen.SwipeToDelete, {});
           }}>
-          GestureBtn
+          SwipeToDelete
         </Text>
 
         <Text style={{fontSize: 34, fontWeight: 'bold', marginVertical: 10}}>
           Animations
+        </Text>
+
+        <Text
+          style={styles.item}
+          onPress={() => {
+            navigation.navigate(Screen.GestureBtn, {});
+          }}>
+          GestureBtn
         </Text>
 
         <Text

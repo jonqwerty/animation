@@ -17,6 +17,7 @@ import AnimateOnDoubleTapScreen from '../screens/AnimateOnDoubleTapScreen';
 import ScrollWithPanGestureScreen from '../screens/ScrollWithPanGestureScreen';
 import ColourPickerScreen from '../screens/ColourPickerScreen';
 import CircularProgressBarScreen from '../screens/CircularProgressBarScreen';
+import SwipeToDeleteScreen from '../screens/SwipeToDeleteScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -166,6 +167,16 @@ const Routes = () => {
       <Stack.Screen
         name="CircularProgressBar"
         component={CircularProgressBarScreen}
+        options={
+          {
+            // gestureEnabled: false,
+            // animation: 'none',
+          }
+        }
+      />
+      <Stack.Screen
+        name="SwipeToDelete"
+        component={SwipeToDeleteScreen}
         options={
           {
             // gestureEnabled: false,
