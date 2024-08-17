@@ -95,6 +95,13 @@ const ListScreen: FC = () => {
           }}>
           SwipeToDelete
         </Text>
+        <Text
+          style={styles.item}
+          onPress={() => {
+            navigation.navigate(Screen.RippleEffect, {});
+          }}>
+          RippleEffect
+        </Text>
 
         <Text style={{fontSize: 34, fontWeight: 'bold', marginVertical: 10}}>
           Animations
