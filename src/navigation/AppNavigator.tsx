@@ -20,6 +20,7 @@ import CircularProgressBarScreen from '../screens/CircularProgressBarScreen';
 import SwipeToDeleteScreen from '../screens/SwipeToDeleteScreen';
 import RippleEffectScreen from '../screens/RippleEffectScreen';
 import PerspectiveMenuScreen from '../screens/PerspectiveMenuScreen';
+import SlidingCounterScreen from '../screens/SlidingCounterScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -199,6 +200,16 @@ const Routes = () => {
       <Stack.Screen
         name="PerspectiveMenu"
         component={PerspectiveMenuScreen}
+        options={
+          {
+            // gestureEnabled: false,
+            // animation: 'none',
+          }
+        }
+      />
+      <Stack.Screen
+        name="SlidingCounter"
+        component={SlidingCounterScreen}
         options={
           {
             // gestureEnabled: false,

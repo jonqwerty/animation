@@ -19,6 +19,7 @@ export enum Screen {
   SwipeToDelete = 'SwipeToDelete',
   RippleEffect = 'RippleEffect',
   PerspectiveMenu = 'PerspectiveMenu',
+  SlidingCounter = 'SlidingCounter',
 }
 
 export type RootStackParamList = {
@@ -40,6 +41,7 @@ export type RootStackParamList = {
   SwipeToDelete: {};
   RippleEffect: {};
   PerspectiveMenu: {};
+  SlidingCounter: {};
 };
 
 export type RootRouteProps<RouteName extends keyof RootStackParamList> =

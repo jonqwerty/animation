@@ -109,6 +109,13 @@ const ListScreen: FC = () => {
           }}>
           PerspectiveMenu
         </Text>
+        <Text
+          style={styles.item}
+          onPress={() => {
+            navigation.navigate(Screen.SlidingCounter, {});
+          }}>
+          SlidingCounter
+        </Text>
 
         <Text style={{fontSize: 34, fontWeight: 'bold', marginVertical: 10}}>
           Animations
