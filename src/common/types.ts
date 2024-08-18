@@ -18,6 +18,7 @@ export enum Screen {
   CircularProgressBar = 'CircularProgressBar',
   SwipeToDelete = 'SwipeToDelete',
   RippleEffect = 'RippleEffect',
+  PerspectiveMenu = 'PerspectiveMenu',
 }
 
 export type RootStackParamList = {
@@ -38,6 +39,7 @@ export type RootStackParamList = {
   CircularProgressBar: {};
   SwipeToDelete: {};
   RippleEffect: {};
+  PerspectiveMenu: {};
 };
 
 export type RootRouteProps<RouteName extends keyof RootStackParamList> =

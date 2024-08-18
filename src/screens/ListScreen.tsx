@@ -102,6 +102,13 @@ const ListScreen: FC = () => {
           }}>
           RippleEffect
         </Text>
+        <Text
+          style={styles.item}
+          onPress={() => {
+            navigation.navigate(Screen.PerspectiveMenu, {});
+          }}>
+          PerspectiveMenu
+        </Text>
 
         <Text style={{fontSize: 34, fontWeight: 'bold', marginVertical: 10}}>
           Animations
