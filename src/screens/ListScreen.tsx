@@ -116,6 +116,13 @@ const ListScreen: FC = () => {
           }}>
           SlidingCounter
         </Text>
+        <Text
+          style={styles.item}
+          onPress={() => {
+            navigation.navigate(Screen.ClockLoader, {});
+          }}>
+          ClockLoader
+        </Text>
 
         <Text style={{fontSize: 34, fontWeight: 'bold', marginVertical: 10}}>
           Animations

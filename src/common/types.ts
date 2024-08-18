@@ -20,6 +20,7 @@ export enum Screen {
   RippleEffect = 'RippleEffect',
   PerspectiveMenu = 'PerspectiveMenu',
   SlidingCounter = 'SlidingCounter',
+  ClockLoader = 'ClockLoader',
 }
 
 export type RootStackParamList = {
@@ -42,6 +43,7 @@ export type RootStackParamList = {
   RippleEffect: {};
   PerspectiveMenu: {};
   SlidingCounter: {};
+  ClockLoader: {};
 };
 
 export type RootRouteProps<RouteName extends keyof RootStackParamList> =

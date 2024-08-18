@@ -21,6 +21,7 @@ import SwipeToDeleteScreen from '../screens/SwipeToDeleteScreen';
 import RippleEffectScreen from '../screens/RippleEffectScreen';
 import PerspectiveMenuScreen from '../screens/PerspectiveMenuScreen';
 import SlidingCounterScreen from '../screens/SlidingCounterScreen';
+import ClockLoaderScreen from '../screens/ClockLoaderScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -210,6 +211,16 @@ const Routes = () => {
       <Stack.Screen
         name="SlidingCounter"
         component={SlidingCounterScreen}
+        options={
+          {
+            // gestureEnabled: false,
+            // animation: 'none',
+          }
+        }
+      />
+      <Stack.Screen
+        name="ClockLoader"
+        component={ClockLoaderScreen}
         options={
           {
             // gestureEnabled: false,
