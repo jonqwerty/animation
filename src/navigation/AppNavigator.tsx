@@ -22,6 +22,8 @@ import RippleEffectScreen from '../screens/RippleEffectScreen';
 import PerspectiveMenuScreen from '../screens/PerspectiveMenuScreen';
 import SlidingCounterScreen from '../screens/SlidingCounterScreen';
 import ClockLoaderScreen from '../screens/ClockLoaderScreen';
+import MagicScrollLayoutScreen from '../screens/MagicScrollLayoutScreen';
+import AnimatedFlatListScreen from '../screens/AnimatedFlatListScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -221,6 +223,26 @@ const Routes = () => {
       <Stack.Screen
         name="ClockLoader"
         component={ClockLoaderScreen}
+        options={
+          {
+            // gestureEnabled: false,
+            // animation: 'none',
+          }
+        }
+      />
+      <Stack.Screen
+        name="MagicScrollLayout"
+        component={MagicScrollLayoutScreen}
+        options={
+          {
+            // gestureEnabled: false,
+            // animation: 'none',
+          }
+        }
+      />
+      <Stack.Screen
+        name="AnimatedFlatList"
+        component={AnimatedFlatListScreen}
         options={
           {
             // gestureEnabled: false,

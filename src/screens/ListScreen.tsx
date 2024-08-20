@@ -123,6 +123,20 @@ const ListScreen: FC = () => {
           }}>
           ClockLoader
         </Text>
+        <Text
+          style={styles.item}
+          onPress={() => {
+            navigation.navigate(Screen.MagicScrollLayout, {});
+          }}>
+          MagicScrollLayout
+        </Text>
+        <Text
+          style={styles.item}
+          onPress={() => {
+            navigation.navigate(Screen.AnimatedFlatList, {});
+          }}>
+          AnimatedFlatList
+        </Text>
 
         <Text style={{fontSize: 34, fontWeight: 'bold', marginVertical: 10}}>
           Animations
