@@ -23,6 +23,7 @@ export enum Screen {
   ClockLoader = 'ClockLoader',
   MagicScrollLayout = 'MagicScrollLayout',
   AnimatedFlatList = 'AnimatedFlatList',
+  DropdownMenu = 'DropdownMenu',
 }
 
 export type RootStackParamList = {
@@ -48,6 +49,7 @@ export type RootStackParamList = {
   ClockLoader: {};
   MagicScrollLayout: {};
   AnimatedFlatList: {};
+  DropdownMenu: {};
 };
 
 export type RootRouteProps<RouteName extends keyof RootStackParamList> =

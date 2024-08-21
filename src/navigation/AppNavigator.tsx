@@ -24,6 +24,7 @@ import SlidingCounterScreen from '../screens/SlidingCounterScreen';
 import ClockLoaderScreen from '../screens/ClockLoaderScreen';
 import MagicScrollLayoutScreen from '../screens/MagicScrollLayoutScreen';
 import AnimatedFlatListScreen from '../screens/AnimatedFlatListScreen';
+import DropdownMenuScreen from '../screens/DropdownMenuScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -243,6 +244,16 @@ const Routes = () => {
       <Stack.Screen
         name="AnimatedFlatList"
         component={AnimatedFlatListScreen}
+        options={
+          {
+            // gestureEnabled: false,
+            // animation: 'none',
+          }
+        }
+      />
+      <Stack.Screen
+        name="DropdownMenu"
+        component={DropdownMenuScreen}
         options={
           {
             // gestureEnabled: false,

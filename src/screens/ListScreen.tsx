@@ -137,6 +137,13 @@ const ListScreen: FC = () => {
           }}>
           AnimatedFlatList
         </Text>
+        <Text
+          style={styles.item}
+          onPress={() => {
+            navigation.navigate(Screen.DropdownMenu, {});
+          }}>
+          DropdownMenu
+        </Text>
 
         <Text style={{fontSize: 34, fontWeight: 'bold', marginVertical: 10}}>
           Animations
