@@ -24,6 +24,7 @@ export enum Screen {
   MagicScrollLayout = 'MagicScrollLayout',
   AnimatedFlatList = 'AnimatedFlatList',
   DropdownMenu = 'DropdownMenu',
+  CircularCarousel = 'CircularCarousel',
 }
 
 export type RootStackParamList = {
@@ -50,6 +51,7 @@ export type RootStackParamList = {
   MagicScrollLayout: {};
   AnimatedFlatList: {};
   DropdownMenu: {};
+  CircularCarousel: {};
 };
 
 export type RootRouteProps<RouteName extends keyof RootStackParamList> =

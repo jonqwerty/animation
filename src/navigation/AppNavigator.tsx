@@ -25,6 +25,7 @@ import ClockLoaderScreen from '../screens/ClockLoaderScreen';
 import MagicScrollLayoutScreen from '../screens/MagicScrollLayoutScreen';
 import AnimatedFlatListScreen from '../screens/AnimatedFlatListScreen';
 import DropdownMenuScreen from '../screens/DropdownMenuScreen';
+import CircularCarouselScreen from '../screens/CircularCarouselScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -254,6 +255,16 @@ const Routes = () => {
       <Stack.Screen
         name="DropdownMenu"
         component={DropdownMenuScreen}
+        options={
+          {
+            // gestureEnabled: false,
+            // animation: 'none',
+          }
+        }
+      />
+      <Stack.Screen
+        name="CircularCarousel"
+        component={CircularCarouselScreen}
         options={
           {
             // gestureEnabled: false,
