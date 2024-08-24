@@ -25,6 +25,7 @@ export enum Screen {
   AnimatedFlatList = 'AnimatedFlatList',
   DropdownMenu = 'DropdownMenu',
   CircularCarousel = 'CircularCarousel',
+  MotiSkeletone = 'MotiSkeletone',
 }
 
 export type RootStackParamList = {
@@ -52,6 +53,7 @@ export type RootStackParamList = {
   AnimatedFlatList: {};
   DropdownMenu: {};
   CircularCarousel: {};
+  MotiSkeletone: {};
 };
 
 export type RootRouteProps<RouteName extends keyof RootStackParamList> =

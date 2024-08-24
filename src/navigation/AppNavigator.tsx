@@ -26,6 +26,7 @@ import MagicScrollLayoutScreen from '../screens/MagicScrollLayoutScreen';
 import AnimatedFlatListScreen from '../screens/AnimatedFlatListScreen';
 import DropdownMenuScreen from '../screens/DropdownMenuScreen';
 import CircularCarouselScreen from '../screens/CircularCarouselScreen';
+import MotiSkeletoneScreen from '../screens/MotiSkeletoneScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -265,6 +266,16 @@ const Routes = () => {
       <Stack.Screen
         name="CircularCarousel"
         component={CircularCarouselScreen}
+        options={
+          {
+            // gestureEnabled: false,
+            // animation: 'none',
+          }
+        }
+      />
+      <Stack.Screen
+        name="MotiSkeletone"
+        component={MotiSkeletoneScreen}
         options={
           {
             // gestureEnabled: false,

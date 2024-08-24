@@ -151,6 +151,13 @@ const ListScreen: FC = () => {
           }}>
           CircularCarousel
         </Text>
+        <Text
+          style={styles.item}
+          onPress={() => {
+            navigation.navigate(Screen.MotiSkeletone, {});
+          }}>
+          MotiSkeletone
+        </Text>
 
         <Text style={{fontSize: 34, fontWeight: 'bold', marginVertical: 10}}>
           Animations
