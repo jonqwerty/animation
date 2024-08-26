@@ -165,6 +165,13 @@ const ListScreen: FC = () => {
           }}>
           ShakeAnimation
         </Text>
+        <Text
+          style={styles.item}
+          onPress={() => {
+            navigation.navigate(Screen.SplitButton, {});
+          }}>
+          SplitButton
+        </Text>
 
         <Text style={{fontSize: 34, fontWeight: 'bold', marginVertical: 10}}>
           Animations

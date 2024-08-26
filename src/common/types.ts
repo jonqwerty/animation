@@ -27,6 +27,7 @@ export enum Screen {
   CircularCarousel = 'CircularCarousel',
   MotiSkeletone = 'MotiSkeletone',
   ShakeAnimation = 'ShakeAnimation',
+  SplitButton = 'SplitButton',
 }
 
 export type RootStackParamList = {
@@ -56,6 +57,7 @@ export type RootStackParamList = {
   CircularCarousel: {};
   MotiSkeletone: {};
   ShakeAnimation: {};
+  SplitButton: {};
 };
 
 export type RootRouteProps<RouteName extends keyof RootStackParamList> =

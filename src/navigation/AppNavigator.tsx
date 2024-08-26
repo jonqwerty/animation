@@ -28,6 +28,7 @@ import DropdownMenuScreen from '../screens/DropdownMenuScreen';
 import CircularCarouselScreen from '../screens/CircularCarouselScreen';
 import MotiSkeletoneScreen from '../screens/MotiSkeletoneScreen';
 import ShakeAnimationScreen from '../screens/ShakeAnimationScreen';
+import SplitButtonScreen from '../screens/SplitButtonScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -287,6 +288,16 @@ const Routes = () => {
       <Stack.Screen
         name="ShakeAnimation"
         component={ShakeAnimationScreen}
+        options={
+          {
+            // gestureEnabled: false,
+            // animation: 'none',
+          }
+        }
+      />
+      <Stack.Screen
+        name="SplitButton"
+        component={SplitButtonScreen}
         options={
           {
             // gestureEnabled: false,
