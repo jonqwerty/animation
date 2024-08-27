@@ -172,6 +172,13 @@ const ListScreen: FC = () => {
           }}>
           SplitButton
         </Text>
+        <Text
+          style={styles.item}
+          onPress={() => {
+            navigation.navigate(Screen.CheckboxInteractions, {});
+          }}>
+          CheckboxInteractions
+        </Text>
 
         <Text style={{fontSize: 34, fontWeight: 'bold', marginVertical: 10}}>
           Animations

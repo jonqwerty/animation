@@ -28,6 +28,7 @@ export enum Screen {
   MotiSkeletone = 'MotiSkeletone',
   ShakeAnimation = 'ShakeAnimation',
   SplitButton = 'SplitButton',
+  CheckboxInteractions = 'CheckboxInteractions',
 }
 
 export type RootStackParamList = {
@@ -58,6 +59,7 @@ export type RootStackParamList = {
   MotiSkeletone: {};
   ShakeAnimation: {};
   SplitButton: {};
+  CheckboxInteractions: {};
 };
 
 export type RootRouteProps<RouteName extends keyof RootStackParamList> =
