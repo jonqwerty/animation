@@ -30,6 +30,8 @@ import MotiSkeletoneScreen from '../screens/MotiSkeletoneScreen';
 import ShakeAnimationScreen from '../screens/ShakeAnimationScreen';
 import SplitButtonScreen from '../screens/SplitButtonScreen';
 import CheckboxInteractionsScreen from '../screens/CheckboxInteractionsScreen';
+import StoryListScreen from '../screens/StoryListScreen';
+import MetaballScreen from '../screens/MetaballScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -309,6 +311,26 @@ const Routes = () => {
       <Stack.Screen
         name="CheckboxInteractions"
         component={CheckboxInteractionsScreen}
+        options={
+          {
+            // gestureEnabled: false,
+            // animation: 'none',
+          }
+        }
+      />
+      <Stack.Screen
+        name="StoryList"
+        component={StoryListScreen}
+        options={
+          {
+            // gestureEnabled: false,
+            // animation: 'none',
+          }
+        }
+      />
+      <Stack.Screen
+        name="Metaball"
+        component={MetaballScreen}
         options={
           {
             // gestureEnabled: false,

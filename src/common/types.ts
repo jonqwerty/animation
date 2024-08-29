@@ -29,6 +29,8 @@ export enum Screen {
   ShakeAnimation = 'ShakeAnimation',
   SplitButton = 'SplitButton',
   CheckboxInteractions = 'CheckboxInteractions',
+  StoryList = 'StoryList',
+  Metaball = 'Metaball',
 }
 
 export type RootStackParamList = {
@@ -60,6 +62,8 @@ export type RootStackParamList = {
   ShakeAnimation: {};
   SplitButton: {};
   CheckboxInteractions: {};
+  StoryList: {};
+  Metaball: {};
 };
 
 export type RootRouteProps<RouteName extends keyof RootStackParamList> =

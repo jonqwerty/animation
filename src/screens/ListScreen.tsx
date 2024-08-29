@@ -222,6 +222,20 @@ const ListScreen: FC = () => {
           }}>
           Animated3DCard
         </Text>
+        <Text
+          style={styles.item}
+          onPress={() => {
+            navigation.navigate(Screen.StoryList, {});
+          }}>
+          StoryList
+        </Text>
+        <Text
+          style={styles.item}
+          onPress={() => {
+            navigation.navigate(Screen.Metaball, {});
+          }}>
+          Metaball
+        </Text>
       </ScrollView>
     </View>
   );
