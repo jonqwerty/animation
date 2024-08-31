@@ -31,6 +31,7 @@ export enum Screen {
   CheckboxInteractions = 'CheckboxInteractions',
   StoryList = 'StoryList',
   Metaball = 'Metaball',
+  GridMagnification = 'GridMagnification',
 }
 
 export type RootStackParamList = {
@@ -64,6 +65,7 @@ export type RootStackParamList = {
   CheckboxInteractions: {};
   StoryList: {};
   Metaball: {};
+  GridMagnification: {};
 };
 
 export type RootRouteProps<RouteName extends keyof RootStackParamList> =

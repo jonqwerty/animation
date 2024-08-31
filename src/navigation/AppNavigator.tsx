@@ -32,6 +32,7 @@ import SplitButtonScreen from '../screens/SplitButtonScreen';
 import CheckboxInteractionsScreen from '../screens/CheckboxInteractionsScreen';
 import StoryListScreen from '../screens/StoryListScreen';
 import MetaballScreen from '../screens/MetaballScreen';
+import GridMagnificationScreen from '../screens/GridMagnificationScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -331,6 +332,16 @@ const Routes = () => {
       <Stack.Screen
         name="Metaball"
         component={MetaballScreen}
+        options={
+          {
+            // gestureEnabled: false,
+            // animation: 'none',
+          }
+        }
+      />
+      <Stack.Screen
+        name="GridMagnification"
+        component={GridMagnificationScreen}
         options={
           {
             // gestureEnabled: false,

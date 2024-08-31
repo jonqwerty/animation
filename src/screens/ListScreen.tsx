@@ -234,7 +234,14 @@ const ListScreen: FC = () => {
           onPress={() => {
             navigation.navigate(Screen.Metaball, {});
           }}>
-          Metaball
+          Metaball Skia
+        </Text>
+        <Text
+          style={styles.item}
+          onPress={() => {
+            navigation.navigate(Screen.GridMagnification, {});
+          }}>
+          GridMagnification Skia
         </Text>
       </ScrollView>
     </View>

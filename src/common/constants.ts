@@ -1,3 +1,5 @@
+import {Dimensions} from 'react-native';
+
 export const Palette = {
   card: '#302E37',
   highlight: '#EA3F4C',
