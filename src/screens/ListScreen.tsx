@@ -243,6 +243,13 @@ const ListScreen: FC = () => {
           }}>
           GridMagnification Skia
         </Text>
+        <Text
+          style={styles.item}
+          onPress={() => {
+            navigation.navigate(Screen.AnimatedGradient, {});
+          }}>
+          AnimatedGradient Skia
+        </Text>
       </ScrollView>
     </View>
   );
