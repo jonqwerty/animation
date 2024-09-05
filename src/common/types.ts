@@ -33,6 +33,7 @@ export enum Screen {
   Metaball = 'Metaball',
   GridMagnification = 'GridMagnification',
   AnimatedGradient = 'AnimatedGradient',
+  PerDotsAnimation = 'PerDotsAnimation',
 }
 
 export type RootStackParamList = {
@@ -68,6 +69,7 @@ export type RootStackParamList = {
   Metaball: {};
   GridMagnification: {};
   AnimatedGradient: {};
+  PerDotsAnimation: {};
 };
 
 export type RootRouteProps<RouteName extends keyof RootStackParamList> =

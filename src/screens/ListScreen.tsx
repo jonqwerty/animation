@@ -179,6 +179,13 @@ const ListScreen: FC = () => {
           }}>
           CheckboxInteractions
         </Text>
+        <Text
+          style={styles.item}
+          onPress={() => {
+            navigation.navigate(Screen.PerDotsAnimation, {});
+          }}>
+          PerDotsAnimation
+        </Text>
 
         <Text style={{fontSize: 34, fontWeight: 'bold', marginVertical: 10}}>
           Animations
