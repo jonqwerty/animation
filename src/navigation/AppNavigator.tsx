@@ -35,6 +35,7 @@ import MetaballScreen from '../screens/MetaballScreen';
 import GridMagnificationScreen from '../screens/GridMagnificationScreen';
 import AnimatedGradientScreen from '../screens/AnimatedGradientScreen';
 import PerDotsAnimationScreen from '../screens/PerDotsAnimationScreen';
+import AnimatedBarChartScreen from '../screens/AnimatedBarChartScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -364,6 +365,16 @@ const Routes = () => {
       <Stack.Screen
         name="PerDotsAnimation"
         component={PerDotsAnimationScreen}
+        options={
+          {
+            // gestureEnabled: false,
+            // animation: 'none',
+          }
+        }
+      />
+      <Stack.Screen
+        name="AnimatedBarChart"
+        component={AnimatedBarChartScreen}
         options={
           {
             // gestureEnabled: false,

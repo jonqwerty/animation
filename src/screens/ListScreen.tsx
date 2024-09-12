@@ -186,6 +186,20 @@ const ListScreen: FC = () => {
           }}>
           PerDotsAnimation
         </Text>
+        <Text
+          style={styles.item}
+          onPress={() => {
+            navigation.navigate(Screen.PerDotsAnimation, {});
+          }}>
+          PerDotsAnimation
+        </Text>
+        <Text
+          style={styles.item}
+          onPress={() => {
+            navigation.navigate(Screen.AnimatedBarChart, {});
+          }}>
+          AnimatedBarChart
+        </Text>
 
         <Text style={{fontSize: 34, fontWeight: 'bold', marginVertical: 10}}>
           Animations
