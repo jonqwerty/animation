@@ -35,6 +35,7 @@ export enum Screen {
   AnimatedGradient = 'AnimatedGradient',
   PerDotsAnimation = 'PerDotsAnimation',
   AnimatedBarChart = 'AnimatedBarChart',
+  LoaderSkia = 'LoaderSkia',
 }
 
 export type RootStackParamList = {
@@ -72,6 +73,7 @@ export type RootStackParamList = {
   AnimatedGradient: {};
   PerDotsAnimation: {};
   AnimatedBarChart: {};
+  LoaderSkia: {};
 };
 
 export type RootRouteProps<RouteName extends keyof RootStackParamList> =

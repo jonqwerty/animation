@@ -212,7 +212,6 @@ const ListScreen: FC = () => {
           }}>
           GestureBtn
         </Text>
-
         <Text
           style={styles.item}
           onPress={() => {
@@ -220,7 +219,6 @@ const ListScreen: FC = () => {
           }}>
           SegmentedControl
         </Text>
-
         <Text
           style={styles.item}
           onPress={() => {
@@ -228,7 +226,6 @@ const ListScreen: FC = () => {
           }}>
           StackedCards
         </Text>
-
         <Text
           style={styles.item}
           onPress={() => {
@@ -250,6 +247,11 @@ const ListScreen: FC = () => {
           }}>
           StoryList
         </Text>
+
+        <Text style={{fontSize: 34, fontWeight: 'bold', marginVertical: 10}}>
+          Skia
+        </Text>
+
         <Text
           style={styles.item}
           onPress={() => {
@@ -270,6 +272,13 @@ const ListScreen: FC = () => {
             navigation.navigate(Screen.AnimatedGradient, {});
           }}>
           AnimatedGradient Skia
+        </Text>
+        <Text
+          style={styles.item}
+          onPress={() => {
+            navigation.navigate(Screen.LoaderSkia, {});
+          }}>
+          Loader Skia
         </Text>
       </ScrollView>
     </View>
