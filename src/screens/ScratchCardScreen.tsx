@@ -21,8 +21,16 @@ type Props = {
 
 const ScratchCardC: FC<Props> = ({style, image, children}) => {
   const [[width, height], setSize] = useState([0, 0]);
-  const path = useRef(Skia.Path.Make());
 
+  const [isMove, setIsMove] = useState(false);
+  const [isScratched, setIsScratched] = useState(false);
+
+  const path = useRef(Skia.Path.Make());
+  const handleTouchEnd = () => {
+    if (isMove) {
+      setIsScratched(true);
+    }
+  };
   return (
     <View
       onLayout={e => {
@@ -31,43 +39,33 @@ const ScratchCardC: FC<Props> = ({style, image, children}) => {
       style={[styles.container, style]}>
       {Boolean(image && width && height) && (
         <>
-          <View>
-            {children}
-            <Canvas
-              style={styles.canvas}
-              onTouchStart={({nativeEvent}) => {
-                path.current.moveTo(
-                  nativeEvent.locationX,
-                  nativeEvent.locationY,
-                );
-              }}
-              onTouchMove={({nativeEvent}) => {
-                path.current.lineTo(
-                  nativeEvent.locationX,
-                  nativeEvent.locationY,
-                );
-              }}>
-              <Mask
-                mode="luminance"
-                mask={
-                  <Group>
-                    <Rect
-                      x={0}
-                      y={0}
-                      width={1000}
-                      height={1000}
-                      color="white"
-                    />
-                    <Path
-                      path={path.current}
-                      color="black"
-                      style="stroke"
-                      strokeJoin="round"
-                      strokeCap="round"
-                      strokeWidth={50}
-                    />
-                  </Group>
-                }>
+          {isMove && <View>{children}</View>}
+          <Canvas
+            style={styles.canvas}
+            onTouchStart={({nativeEvent}) => {
+              path.current.moveTo(nativeEvent.locationX, nativeEvent.locationY);
+            }}
+            onTouchMove={({nativeEvent}) => {
+              setIsMove(true);
+              path.current.lineTo(nativeEvent.locationX, nativeEvent.locationY);
+            }}
+            onTouchEnd={handleTouchEnd}>
+            <Mask
+              mode="luminance"
+              mask={
+                <Group>
+                  <Rect x={0} y={0} width={1000} height={1000} color="white" />
+                  <Path
+                    path={path.current}
+                    color="black"
+                    style="stroke"
+                    strokeJoin="round"
+                    strokeCap="round"
+                    strokeWidth={50}
+                  />
+                </Group>
+              }>
+              {!isScratched && (
                 <Image
                   image={image}
                   fit="cover"
@@ -76,9 +74,9 @@ const ScratchCardC: FC<Props> = ({style, image, children}) => {
                   width={width}
                   height={height}
                 />
-              </Mask>
-            </Canvas>
-          </View>
+              )}
+            </Mask>
+          </Canvas>
         </>
       )}
     </View>
