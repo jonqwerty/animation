@@ -37,6 +37,7 @@ import AnimatedGradientScreen from '../screens/AnimatedGradientScreen';
 import PerDotsAnimationScreen from '../screens/PerDotsAnimationScreen';
 import AnimatedBarChartScreen from '../screens/AnimatedBarChartScreen';
 import LoaderSkiaScreen from '../screens/LoaderSkiaScreen';
+import ScratchCardScreen from '../screens/ScratchCardScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -386,6 +387,16 @@ const Routes = () => {
       <Stack.Screen
         name="LoaderSkia"
         component={LoaderSkiaScreen}
+        options={
+          {
+            // gestureEnabled: false,
+            // animation: 'none',
+          }
+        }
+      />
+      <Stack.Screen
+        name="ScratchCard"
+        component={ScratchCardScreen}
         options={
           {
             // gestureEnabled: false,

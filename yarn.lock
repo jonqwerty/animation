@@ -1729,6 +1729,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@georgedoescode/spline@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "@georgedoescode/spline@npm:1.0.1"
+  checksum: 338ec39290cd3bd06922e6b8c0f3333041062cf75aa2ce00f7ce10c77c59e61a8f9c3e375bbb075ef0138de480907cd743ab8241c37e21ed82b7be5548ac5a6e
+  languageName: node
+  linkType: hard
+
 "@hapi/hoek@npm:^9.0.0, @hapi/hoek@npm:^9.3.0":
   version: 9.3.0
   resolution: "@hapi/hoek@npm:9.3.0"
@@ -3321,6 +3328,7 @@ __metadata:
     "@babel/core": ^7.20.0
     "@babel/preset-env": ^7.20.0
     "@babel/runtime": ^7.20.0
+    "@georgedoescode/spline": ^1.0.1
     "@react-native/babel-preset": 0.74.85
     "@react-native/eslint-config": 0.74.85
     "@react-native/metro-config": 0.74.85
@@ -3351,6 +3359,7 @@ __metadata:
     react-native-skia-gesture: ^0.3.6
     react-native-svg: ^15.4.0
     react-test-renderer: 18.2.0
+    simplex-noise: ^4.0.3
     typescript: 5.0.4
   languageName: unknown
   linkType: soft
@@ -9299,6 +9308,13 @@ __metadata:
   dependencies:
     is-arrayish: ^0.3.1
   checksum: a7f3f2ab5c76c4472d5c578df892e857323e452d9f392e1b5cf74b74db66e6294a1e1b8b390b519fa1b96b5b613f2a37db6cffef52c3f1f8f3c5ea64eb2d54c0
+  languageName: node
+  linkType: hard
+
+"simplex-noise@npm:^4.0.3":
+  version: 4.0.3
+  resolution: "simplex-noise@npm:4.0.3"
+  checksum: b47720a540695947cd60b0571b4427b68392b1c75e76e27278e3c1b7ea13301d46d60fe9a81ff6a42b1048f2548c9c6687630b984ec0b59d7ab4e79969052462
   languageName: node
   linkType: hard
 

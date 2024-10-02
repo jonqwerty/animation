@@ -280,6 +280,13 @@ const ListScreen: FC = () => {
           }}>
           Loader Skia
         </Text>
+        <Text
+          style={styles.item}
+          onPress={() => {
+            navigation.navigate(Screen.ScratchCard, {});
+          }}>
+          ScratchCard Skia
+        </Text>
       </ScrollView>
     </View>
   );
