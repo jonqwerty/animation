@@ -409,8 +409,16 @@ const Routes = () => {
 };
 
 const AppNavigator = () => {
+  const linking = {
+    prefixes: ['animationexamplesx://'],
+    config: {
+      screens: {
+        ScratchCard: 'scratchcard',
+      },
+    },
+  };
   return (
-    <NavigationContainer>
+    <NavigationContainer linking={linking}>
       <Routes />
     </NavigationContainer>
   );
