@@ -247,6 +247,13 @@ const ListScreen: FC = () => {
           }}>
           StoryList
         </Text>
+        <Text
+          style={styles.item}
+          onPress={() => {
+            navigation.navigate(Screen.ToastMessage, {});
+          }}>
+          ToastMessage
+        </Text>
 
         <Text style={{fontSize: 34, fontWeight: 'bold', marginVertical: 10}}>
           Skia

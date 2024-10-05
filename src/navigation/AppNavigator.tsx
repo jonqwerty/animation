@@ -38,6 +38,7 @@ import PerDotsAnimationScreen from '../screens/PerDotsAnimationScreen';
 import AnimatedBarChartScreen from '../screens/AnimatedBarChartScreen';
 import LoaderSkiaScreen from '../screens/LoaderSkiaScreen';
 import ScratchCardScreen from '../screens/ScratchCardScreen';
+import ToastMessageScreen from '../screens/ToastMessageScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -397,6 +398,16 @@ const Routes = () => {
       <Stack.Screen
         name="ScratchCard"
         component={ScratchCardScreen}
+        options={
+          {
+            // gestureEnabled: false,
+            // animation: 'none',
+          }
+        }
+      />
+      <Stack.Screen
+        name="ToastMessage"
+        component={ToastMessageScreen}
         options={
           {
             // gestureEnabled: false,
