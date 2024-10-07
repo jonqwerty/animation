@@ -7,6 +7,15 @@ export const Palette = {
   background: '#18141D',
   text: 'white',
   bg: '#3E3649',
+  grey: '#808080',
+};
+export const Colors = {
+  grey: '#808080',
+  primary: '#808333',
+  red: '#EA3F4C',
+  black: '#000000',
+  white: '#FFFFFF',
+  transparent: '#ffffff00',
 };
 
 const mondayFromThreeWeeksAgo = startOfWeek(

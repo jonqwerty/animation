@@ -254,6 +254,13 @@ const ListScreen: FC = () => {
           }}>
           ToastMessage
         </Text>
+        <Text
+          style={styles.item}
+          onPress={() => {
+            navigation.navigate(Screen.AnimatedInputField, {});
+          }}>
+          AnimatedInputField
+        </Text>
 
         <Text style={{fontSize: 34, fontWeight: 'bold', marginVertical: 10}}>
           Skia

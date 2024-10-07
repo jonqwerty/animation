@@ -1,4 +1,5 @@
 import {RouteProp} from '@react-navigation/native';
+import {TextInputProps, TextStyle} from 'react-native';
 
 export enum Screen {
   List = 'List',
@@ -38,6 +39,7 @@ export enum Screen {
   LoaderSkia = 'LoaderSkia',
   ScratchCard = 'ScratchCard',
   ToastMessage = 'ToastMessage',
+  AnimatedInputField = 'AnimatedInputField',
 }
 
 export type RootStackParamList = {
@@ -78,7 +80,48 @@ export type RootStackParamList = {
   LoaderSkia: {};
   ScratchCard: {};
   ToastMessage: {};
+  AnimatedInputField: {};
 };
 
 export type RootRouteProps<RouteName extends keyof RootStackParamList> =
   RouteProp<RootStackParamList, RouteName>;
+
+export enum variantEnum {
+  outlined = 'outlined',
+  standard = 'standard',
+}
+
+export interface AnimationTextInputMethods {
+  focus: () => void;
+  blur: () => void;
+  isFocused: Boolean;
+  clear: () => void;
+}
+
+export interface AnimationTextInputProps extends TextInputProps {
+  placeholder?: string;
+  fontSize?: number;
+  fontColor?: string;
+  fontFamily?: string;
+  paddingVertical?: number;
+  paddingHorizontal?: number;
+  activeColor?: string;
+  inactiveColor?: string;
+  backgroundColor?: string;
+  trailingIcon?: JSX.Element;
+  characterCount?: number;
+  characterCountFontSize?: number;
+  characterCountColor?: string;
+  assistiveText?: string;
+  assistiveTextFontSize?: number;
+  assistiveTextColor?: string;
+  assistiveFontFamily?: string;
+  errorFontSize?: number;
+  errorFontFamily?: string;
+  error?: string;
+  errorColor?: string;
+  assistiveTextStyle?: TextStyle;
+  errorStyle?: TextStyle;
+  counterTextStyle?: TextStyle;
+  variant?: 'outlined' | 'standard';
+}
