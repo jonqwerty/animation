@@ -236,13 +236,6 @@ const ListScreen: FC = () => {
         <Text
           style={styles.item}
           onPress={() => {
-            navigation.navigate(Screen.Animated3DCard, {});
-          }}>
-          Animated3DCard
-        </Text>
-        <Text
-          style={styles.item}
-          onPress={() => {
             navigation.navigate(Screen.StoryList, {});
           }}>
           StoryList
@@ -300,6 +293,20 @@ const ListScreen: FC = () => {
             navigation.navigate(Screen.ScratchCard, {});
           }}>
           ScratchCard Skia
+        </Text>
+        <Text
+          style={styles.item}
+          onPress={() => {
+            navigation.navigate(Screen.Animated3DCard, {});
+          }}>
+          Animated3DCard
+        </Text>
+        <Text
+          style={styles.item}
+          onPress={() => {
+            navigation.navigate(Screen.Animated3DBluredCard, {});
+          }}>
+          Animated3DBluredCard Skia
         </Text>
       </ScrollView>
     </View>

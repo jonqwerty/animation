@@ -14,8 +14,6 @@ import {
   Canvas,
   RoundedRect,
   SweepGradient,
-  useSharedValueEffect,
-  useValue,
   vec,
 } from '@shopify/react-native-skia';
 

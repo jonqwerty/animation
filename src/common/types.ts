@@ -40,6 +40,7 @@ export enum Screen {
   ScratchCard = 'ScratchCard',
   ToastMessage = 'ToastMessage',
   AnimatedInputField = 'AnimatedInputField',
+  Animated3DBluredCard = 'Animated3DBluredCard',
 }
 
 export type RootStackParamList = {
@@ -81,6 +82,7 @@ export type RootStackParamList = {
   ScratchCard: {};
   ToastMessage: {};
   AnimatedInputField: {};
+  Animated3DBluredCard: {};
 };
 
 export type RootRouteProps<RouteName extends keyof RootStackParamList> =

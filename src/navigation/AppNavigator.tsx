@@ -40,6 +40,7 @@ import LoaderSkiaScreen from '../screens/LoaderSkiaScreen';
 import ScratchCardScreen from '../screens/ScratchCardScreen';
 import ToastMessageScreen from '../screens/ToastMessageScreen';
 import AnimatedInputFieldScreen from '../screens/AnimatedInputFieldScreen';
+import Animated3DBluredCardScreen from '../screens/Animated3DBluredCardScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -419,6 +420,16 @@ const Routes = () => {
       <Stack.Screen
         name="AnimatedInputField"
         component={AnimatedInputFieldScreen}
+        options={
+          {
+            // gestureEnabled: false,
+            // animation: 'none',
+          }
+        }
+      />
+      <Stack.Screen
+        name="Animated3DBluredCard"
+        component={Animated3DBluredCardScreen}
         options={
           {
             // gestureEnabled: false,
