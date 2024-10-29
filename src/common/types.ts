@@ -41,6 +41,7 @@ export enum Screen {
   ToastMessage = 'ToastMessage',
   AnimatedInputField = 'AnimatedInputField',
   Animated3DBluredCard = 'Animated3DBluredCard',
+  CustomSwitcher = 'CustomSwitcher',
 }
 
 export type RootStackParamList = {
@@ -83,6 +84,7 @@ export type RootStackParamList = {
   ToastMessage: {};
   AnimatedInputField: {};
   Animated3DBluredCard: {};
+  CustomSwitcher: {};
 };
 
 export type RootRouteProps<RouteName extends keyof RootStackParamList> =

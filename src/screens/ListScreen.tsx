@@ -254,6 +254,13 @@ const ListScreen: FC = () => {
           }}>
           AnimatedInputField
         </Text>
+        <Text
+          style={styles.item}
+          onPress={() => {
+            navigation.navigate(Screen.CustomSwitcher, {});
+          }}>
+          CustomSwitcher
+        </Text>
 
         <Text style={{fontSize: 34, fontWeight: 'bold', marginVertical: 10}}>
           Skia

@@ -41,6 +41,7 @@ import ScratchCardScreen from '../screens/ScratchCardScreen';
 import ToastMessageScreen from '../screens/ToastMessageScreen';
 import AnimatedInputFieldScreen from '../screens/AnimatedInputFieldScreen';
 import Animated3DBluredCardScreen from '../screens/Animated3DBluredCardScreen';
+import CustomSwitcherScreen from '../screens/CustomSwitcherScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -430,6 +431,16 @@ const Routes = () => {
       <Stack.Screen
         name="Animated3DBluredCard"
         component={Animated3DBluredCardScreen}
+        options={
+          {
+            // gestureEnabled: false,
+            // animation: 'none',
+          }
+        }
+      />
+      <Stack.Screen
+        name="CustomSwitcher"
+        component={CustomSwitcherScreen}
         options={
           {
             // gestureEnabled: false,
