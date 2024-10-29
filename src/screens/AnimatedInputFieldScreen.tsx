@@ -325,9 +325,11 @@ const AnimatedInputFieldScreen = () => {
         paddingHorizontal: 10,
         justifyContent: 'center',
         alignItems: 'center',
+        gap: 40,
       }}>
       <AnimatedInputField placeholder="Name" />
       <AnimatedInputField placeholder="City" error="any error" />
+      <AnimatedInputField placeholder="Street" variant={variantEnum.standard} />
     </View>
   );
 };
