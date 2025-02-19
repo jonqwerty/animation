@@ -315,6 +315,13 @@ const ListScreen: FC = () => {
           }}>
           Animated3DBluredCard Skia
         </Text>
+        <Text
+          style={styles.item}
+          onPress={() => {
+            navigation.navigate(Screen.BlurCards, {});
+          }}>
+          Blur cards
+        </Text>
       </ScrollView>
     </View>
   );

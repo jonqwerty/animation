@@ -42,6 +42,7 @@ import ToastMessageScreen from '../screens/ToastMessageScreen';
 import AnimatedInputFieldScreen from '../screens/AnimatedInputFieldScreen';
 import Animated3DBluredCardScreen from '../screens/Animated3DBluredCardScreen';
 import CustomSwitcherScreen from '../screens/CustomSwitcherScreen';
+import BlurCardsScreen from '../screens/BlurCardsScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -441,6 +442,16 @@ const Routes = () => {
       <Stack.Screen
         name="CustomSwitcher"
         component={CustomSwitcherScreen}
+        options={
+          {
+            // gestureEnabled: false,
+            // animation: 'none',
+          }
+        }
+      />
+      <Stack.Screen
+        name="BlurCards"
+        component={BlurCardsScreen}
         options={
           {
             // gestureEnabled: false,
